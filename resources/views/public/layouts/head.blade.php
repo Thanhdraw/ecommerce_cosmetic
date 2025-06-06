@@ -1,7 +1,3 @@
-{{-- resources/views/welcome.blade.php --}}
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,11 +30,3 @@
     @stack('styles')
 
 </head>
-
-<body class="flex flex-col items-center justify-center min-h-screen text-gray-800 bg-gray-100" x-data="{ open: false }">
-
-
-
-</body>
-
-</html>
