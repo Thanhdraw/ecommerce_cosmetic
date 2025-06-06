@@ -39,7 +39,7 @@ class PostController extends Controller
         try {
 
             $this->post->create($request->input());
-            return back()->with('status', 'Created post success !');
+            return back()->with('success', 'Created post success !');
         } catch (\Throwable $th) {
 
             return back()->withErrors(['error' => $th->getMessage()]);

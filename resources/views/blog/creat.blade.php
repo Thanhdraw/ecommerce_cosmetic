@@ -6,12 +6,10 @@
     @csrf
     <input type="text" placeholder="Nhap title" name="title">
     <input type="text" placeholder="Nhap description" name="description">
+    <x-notification type="success" />
+    <x-notification type="error" />
+    <x-notification type="warning" />
 
-    @if (session('status'))
-    <div class="alert alert-success">
-        {{ session('status') }}
-    </div>
-    @endif
     @if ($errors->any())
     <div class="alert alert-danger">
         @foreach ($errors->all() as $error)
